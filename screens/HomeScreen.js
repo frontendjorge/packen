@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 
-
+import Carrousel from '../screens/NewProductsCarrousel';
 
 import { MonoText } from '../components/StyledText';
 
@@ -36,7 +36,7 @@ export default function HomeScreen() {
 
         <View style={styles.getStartedContainer}>
 
-    
+    <Carrousel/>
          
 
           <Text style={styles.getStartedText}>Get started by opening</Text>
