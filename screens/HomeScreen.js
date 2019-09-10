@@ -10,6 +10,9 @@ import {
   View,
 } from 'react-native';
 
+
+
+
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
@@ -19,18 +22,22 @@ export default function HomeScreen() {
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
         <View style={styles.welcomeContainer}>
-          <Image
+       
+        <Image
             source={
               __DEV__
-                ? require('../assets/images/robot-dev.png')
-                : require('../assets/images/robot-prod.png')
+                ? require('../assets/images/header_home.jpg')
+                : require('../assets/images/header_home.jpg')
             }
             style={styles.welcomeImage}
           />
-        </View>
+          
+        </View> 
 
         <View style={styles.getStartedContainer}>
-          <DevelopmentModeNotice />
+
+    
+         
 
           <Text style={styles.getStartedText}>Get started by opening</Text>
 
@@ -73,7 +80,7 @@ HomeScreen.navigationOptions = {
   header: null,
 };
 
-function DevelopmentModeNotice() {
+/*function DevelopmentModeNotice() {
   if (__DEV__) {
     const learnMoreButton = (
       <Text onPress={handleLearnMorePress} style={styles.helpLinkText}>
@@ -94,7 +101,7 @@ function DevelopmentModeNotice() {
       </Text>
     );
   }
-}
+}*/
 
 function handleLearnMorePress() {
   WebBrowser.openBrowserAsync(
@@ -121,19 +128,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   contentContainer: {
-    paddingTop: 30,
+    paddingTop: 0,
   },
   welcomeContainer: {
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 0,
     marginBottom: 20,
   },
   welcomeImage: {
-    width: 100,
-    height: 80,
-    resizeMode: 'contain',
-    marginTop: 3,
-    marginLeft: -10,
+    width: '100%',
+    height: 250,
+    resizeMode: 'cover',
+    marginTop: 0,
+    marginLeft: 0,
   },
   getStartedContainer: {
     alignItems: 'center',
@@ -178,7 +185,7 @@ const styles = StyleSheet.create({
   },
   tabBarInfoText: {
     fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    color: '#5a7392',
     textAlign: 'center',
   },
   navigationFilename: {
@@ -193,6 +200,21 @@ const styles = StyleSheet.create({
   },
   helpLinkText: {
     fontSize: 14,
-    color: '#2e78b7',
+    color: '#5a7392',
   },
+  slideContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    height: 200
+},
+slide1: {
+    backgroundColor: "rgba(20,20,200,0.3)"
+},
+slide2: {
+    backgroundColor: "rgba(20,200,20,0.3)"
+},
+slide3: {
+    backgroundColor: "rgba(200,20,20,0.3)"
+},
 });
