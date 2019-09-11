@@ -40,6 +40,9 @@ async function loadResourcesAsync() {
       // We include SpaceMono because we use it in HomeScreen.js. Feel free to
       // remove this if you are not using it in your app
       'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+      'lato-bold': require('./assets/fonts/Lato-Bold.ttf'),
+      'lato-light': require('./assets/fonts/Lato-Light.ttf'),
+      'lato-regular': require('./assets/fonts/Lato-Regular.ttf'),
     }),
   ]);
 }
@@ -57,6 +60,6 @@ function handleFinishLoading(setLoadingComplete) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f9faff',
   },
 });

@@ -13,7 +13,7 @@ import {
 
 import Carrousel from '../screens/NewProductsCarrousel';
 
-import { MonoText } from '../components/StyledText';
+import { MonoText, LatoBold } from '../components/StyledText';
 
 export default function HomeScreen() {
   return (
@@ -36,7 +36,7 @@ export default function HomeScreen() {
 
         <View style={styles.getStartedContainer}>
 
-    <Carrousel/>
+         <Carrousel/>
          
 
           <Text style={styles.getStartedText}>Get started by opening</Text>
@@ -118,7 +118,7 @@ function handleHelpPress() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f9faff',
   },
   developmentModeText: {
     marginBottom: 20,
