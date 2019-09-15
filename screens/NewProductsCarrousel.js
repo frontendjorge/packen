@@ -4,13 +4,17 @@ import {
   View,
   Dimensions,
   StyleSheet,
-  Image
+  Image,
+  ActivityIndicator,
+  FlatList
 } from 'react-native';
-import Carousel from 'react-native-looped-carousel-improved';
+import Carousel from 'react-native-snap-carousel';
  
 const { width, height } = Dimensions.get('window');
 
 import { LatoBold, LatoLight } from '../components/StyledText';
+
+const pillowsRest = 'https://inmoobi.com/MOCK_DATA.json';
  
 export default class MyCarousel extends Component {
  
@@ -18,114 +22,77 @@ export default class MyCarousel extends Component {
     super(props);
  
     this.state = {
-      size: { width, height },
+      pillowList: [],
+      visible: 8,
+      loading: true,
+      width: width - 20,
+      widthitem: width /2 - 9,
+      height: 90
     };
   }
  
-  _onLayoutDidChange = (e) => {
-    const layout = e.nativeEvent.layout;
-    this.setState({ size: { width: width-20, height: 100 } });
-  }
+
+
+  _renderItem ({item, index}) {
+    return (     
+        <View style={styles.getSlider}>
+        <Image
+          source={{uri: 'https://image.freepik.com/foto-gratis/diseno-zen-japones-habitacion-hotel-madera-luz-hiden-sobre-fondo-pared-blanca_118980-234.jpg'}} 
+          style={styles.imageSlider}
+        />
+        <View style={styles.getSliderTitle}>
+          <LatoBold style={styles.getSliderTextTitle}>{item.title}</LatoBold>
+        </View>
+        <View style={styles.getSliderPrice}>
+          <LatoBold style={styles.getSliderTextPrice}>{item.price}</LatoBold>
+        </View>
+      </View>
+    );
+}
+
+ componentDidMount() {
+
+
+    this.getPillowsFromApiAsync()
+
+}
+
+ getPillowsFromApiAsync() {
+  return fetch(pillowsRest)
+    .then((response) => response.json())
+    .then((responseJson) => {
+     
+      const pillowListdata = responseJson;
+      this.setState({
+        pillowList: pillowListdata
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
  
   render() {
     return (
-      <View style={{ flex: 1, paddingRight: 10, paddingLeft: 10 }} onLayout={this._onLayoutDidChange}>
+      <View style={{ flex: 1, paddingRight: 10, paddingLeft: 10 }}>
         <View><LatoLight style={styles.getTitleModule}>New Products</LatoLight></View>
-        <Carousel
-          delay={2000}
-          style={this.state.size}
-          autoplay={false}
-          pageInfo={false}
-          isLooped={false}
-          bullets={false}
-          //onAnimateNextPage={(p) => console.log(p)}
-        >
-          <View style={styles.getSlider}>
-
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/slide1.jpg')
-                  : require('../assets/images/slide1.jpg')
-              }
-              style={styles.imageSlider}
+       
+        
+        <Carousel layout={'default'} layoutCardOffset={10}
+              ref={(c) => { this._carousel = c; }}
+              data={this.state.pillowList}
+              renderItem={this._renderItem}
+              sliderWidth={this.state.width}
+              itemWidth={this.state.widthitem}
+              activeAnimationType={'timing'}
+              activeSlideAlignment={'start'}
+              activeSlideOffset={10}
+              inactiveSlideScale={1}
+              inactiveSlideOpacity={1}
+              autoplay={true}
+              loop={true}
             />
-            <View style={styles.getSliderTitle}>
-              <LatoBold style={styles.getSliderTextTitle}>Pure White Water</LatoBold>
-            </View>
-            <View style={styles.getSliderPrice}>
-              <LatoBold style={styles.getSliderTextPrice}>$14.50</LatoBold>
-            </View>
-          </View>
-          <View style={styles.getSlider}>
 
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/slide2.jpg')
-                  : require('../assets/images/slide2.jpg')
-              }
-              style={styles.imageSlider}
-            />
-            <View style={styles.getSliderTitle}>
-              <LatoBold style={styles.getSliderTextTitle}>Pure White Water</LatoBold>
-            </View>
-            <View style={styles.getSliderPrice}>
-              <LatoBold style={styles.getSliderTextPrice}>$14.50</LatoBold>
-            </View>
-          </View>
-          <View style={styles.getSlider}>
-
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/slide1.jpg')
-                  : require('../assets/images/slide1.jpg')
-              }
-              style={styles.imageSlider}
-            />
-            <View style={styles.getSliderTitle}>
-              <LatoBold style={styles.getSliderTextTitle}>Pure White Water</LatoBold>
-            </View>
-            <View style={styles.getSliderPrice}>
-              <LatoBold style={styles.getSliderTextPrice}>$14.50</LatoBold>
-            </View>
-          </View>
-          <View style={styles.getSlider}>
-
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/slide2.jpg')
-                  : require('../assets/images/slide2.jpg')
-              }
-              style={styles.imageSlider}
-            />
-            <View style={styles.getSliderTitle}>
-              <LatoBold style={styles.getSliderTextTitle}>Pure White Water</LatoBold>
-            </View>
-            <View style={styles.getSliderPrice}>
-              <LatoBold style={styles.getSliderTextPrice}>$14.50</LatoBold>
-            </View>
-          </View>
-          <View style={styles.getSlider}>
-
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/slide1.jpg')
-                  : require('../assets/images/slide1.jpg')
-              }
-              style={styles.imageSlider}
-            />
-            <View style={styles.getSliderTitle}>
-              <LatoBold style={styles.getSliderTextTitle}>Pure White Water</LatoBold>
-            </View>
-            <View style={styles.getSliderPrice}>
-              <LatoBold style={styles.getSliderTextPrice}>$14.50</LatoBold>
-            </View>
-          </View>
-        </Carousel>
       </View>
     );
   }
@@ -133,39 +100,39 @@ export default class MyCarousel extends Component {
 
 const styles = StyleSheet.create({
   getSlider: {
-    width: width/2.2,
+    height: 100,
     backgroundColor: '#ffffff',
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 3,
+      height: 2,
     },
-    shadowOpacity: 0.29,
-    shadowRadius: 4.65,
-    elevation: 7,
-    marginLeft:3,
-    marginRight: 6,
+    shadowOpacity: 0.18,
+    shadowRadius: 6,
+    elevation: 5,
+    marginLeft:2,
+    marginRight:4,
     marginBottom: 10,
     borderRadius: 6
   },
   imageSlider: {
-    width:75,
-    height:75,
+    width:85,
+    height:90,
     marginLeft:5,
-    marginTop: 6
+    marginTop: 5
   },
   getSliderTitle: {
-    marginTop: -70,
-    marginLeft: 90,
-    width: width/4,
+    marginTop: -80,
+    marginLeft: 95,
+    width: width/5,
   },
   getSliderTextTitle: {
     color: "#5b7492",
-    fontSize: 15
+    fontSize: 13
   },
   getSliderPrice: {
     marginTop: 10,
-    marginLeft: 90,
+    marginLeft: 95,
     width: width/4,
   },
   getSliderTextPrice: {

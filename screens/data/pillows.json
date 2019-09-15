@@ -1,0 +1,142 @@
+﻿[
+  {
+    "id": 1,
+    "question": "¿Qué instituciones educativas son elegibles para participar en el concurso?",
+    "answer": "Colegios o instituciones educativas en territorio Colombiano de carácter oficial que tengan los grados 9 a 11 en bachillerato."
+  },
+  {
+    "id": 2,
+    "question": "¿Qué es STEM?",
+    "answer": "Esta metodología esta basada en el aprendizaje integrado de las siguientes disciplinas: Ciencia, Tecnología, Ingenieria, y/o Matemática (STEM: Science, Technology, Engineering y Math)."
+  },
+  {
+    "id": 3,
+    "question": "¿Tengo que ser un profesor de STEM para participar en el concurso?",
+    "answer": "No, este concurso está abierto a TODOS los maestros, independientemente de la materia impartida. Si bien el tema de este concurso motiva las soluciones centradas en STEM, no está limitado a estas."
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo puedo participar?",
+    "answer": "Debes diligenciar el formulario de Inscripción en su totalidad, de acuerdo a las instrucciones correspondientes, el cual estará disponible en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 5,
+    "question": "¿Qué se debe presentar al inscribirse? ó ¿Como nos inscribimos?",
+    "answer": "El formato de Inscripción diligenciado en su totalidad que encontrarás en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 6,
+    "question": "¿Qué tiempo tenemos para la inscripción? ó ¿Hasta cuándo tienen plazo para inscribirse?",
+    "answer": "La primera etapa inicia el 31 de julio y finaliza el 9 de agosto."
+  },
+  {
+    "id": 7,
+    "question": "¿Cómo se conforman los equipos?",
+    "answer": "Cada propuesta deben conformar 1 equipo mixto, de mínimo 2  y máximo 5 estudiantes y un docente responsable."
+  },
+  {
+    "id": 8,
+    "question": "¿Cómo puedo saber el estado de mi solicitud?",
+    "answer": "Recibirás un correo electrónico de confirmación después de la aplicación."
+  },
+  {
+    "id": 9,
+    "question": "¿Cómo puedo saber si me seleccionan para pasar a la siguiente fase del concurso?",
+    "answer": "Si tu equipo avanza en las etapas del concurso, los responsables te comunicarán la decisión en cada fase, a través de correo electrónico y / o teléfono. También puedes consultar la información de avances de cada etapa en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 10,
+    "question": "¿Cuáles son los premios del concurso?",
+    "answer": "El equipo ganador representará a Colombia en el encuentro suramericano “Soluciones para el futuro” en Sao Paulo Brasil con todos los gastos pagos y celulares de marca Samsung modelo Galaxy A80 para cada uno de los miembros del equipo incluyendo al profesor líder y el rector de la institución."
+  },
+  {
+    "id": 11,
+    "question": "¿Cuántas y cuáles personas viajan al a Brasil a representar a Colombia?",
+    "answer": "Todos los estudiantes que conforman el equipo y el docente responsable."
+  },
+  {
+    "id": 12,
+    "question": "¿Cuáles son las causas inhabilitantes del concurso?",
+    "answer": "Incumplir alguno de los requerimientos habilitantes definidos en términos y condiciones, los cuales podrás encontrar en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 13,
+    "question": "¿Cuáles son las fechas claves?",
+    "answer": "Etapa 1: Las inscripciones inician el 31 julio y finalizan el 9 de agosto. Etapa 2: Notificación de semi-finalistas a los 25 equipos: 26 de agosto. Recepción de videos desde el 26 de agosto al 6 de septiembre. Etapa 3: Notificación a cinco equipos Finalistas: 16 de septiembre. Votación en línea: Del 16 al 26 de septiembre. Sustentación final: Del 23 al 26 de septiembre."
+  },
+  {
+    "id": 14,
+    "question": "¿Cuáles serán los criterios de selección?",
+    "answer": "Cada una de las etapas tiene unos criterios definidos. Puedes consultarlos en términos y condiciones en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 15,
+    "question": "¿Todos los integrantes tienen que ser del mismo colegio?",
+    "answer": "Si, Los estudiantes y el docente de cada equipo deben pertenecer al mismo colegio."
+  },
+  {
+    "id": 16,
+    "question": "¿Solo tengo una idea de mi proyecto, ¿puedo postular?",
+    "answer": "Si. Siempre y cuando de esa idea puedas plantear un problema y su respectiva solución, siguiendo todos los requisitos del formulario de inscripción en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 17,
+    "question": "¿Debe haber un profesor líder asociado a cada proyecto/propuesta?",
+    "answer": "Si, este es un requisito habilitante para participar."
+  },
+  {
+    "id": 18,
+    "question": "¿Puedo postularme solo, sin equipo?",
+    "answer": "No, los requisitos indican que el equipo debe ser conformado por lo menos por dos estudiantes y un docente."
+  },
+  {
+    "id": 19,
+    "question": "¿Hay financiación para los proyectos elegidos?",
+    "answer": "No, no hay financiaicón, el concurso tiene un sistema de premios definido que puedes consultar en términos y condiciones en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 20,
+    "question": "¿Los estudiantes pueden estar inscritos en más de un equipo a la vez?",
+    "answer": "No, el estudiante solo puede pertenecer a un equipo."
+  },
+  {
+    "id": 21,
+    "question": "¿El profesor puede estar a cargo de más de un equipo?",
+    "answer": "Si, el docente puede participar como líder en varios equipos."
+  },
+  {
+    "id": 22,
+    "question": "¿Puede algún miembro del equipo ser cambiado en alguna fase del proceso?",
+    "answer": "No, el equipo conformado desde el principio debe continuar hasta el final."
+  },
+  {
+    "id": 23,
+    "question": "¿Si tengo alguna duda o problemas para postular, ¿cómo puedo contactarme?",
+    "answer": "Todas las inquietudes puedes enviarlas al correo solucionesparaelfuturo@edumedio.com"
+  },
+  {
+    "id": 24,
+    "question": "¿Puedo participar con mi proyecto en otros concursos similares?",
+    "answer": "No, no es permitido participar en otros concursos similares con este proyecto. Para más información sobre los derechos del proyecto puedes ingresar a nuestro términos y condiciones en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 25,
+    "question": "¿Mi proyecto ha ganado un concurso anterior, ¿puedo participar?",
+    "answer": "No, no es permitido participar en este concurso con proyectos que ya hayan sido ganadores en otros concursos similares o no relacionados. Para más información sobre los requerimiento del proyecto puedes ingresar a nuestro términos y condiciones en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 26,
+    "question": "¿Puede haber un equipo conformado por noveno, decimo y undécimo?",
+    "answer": "Sí, puede haber un equipo conformado por noveno, décimo y undécimo, siempre y cuando mantenga las condiciones obligatorias requeridas para conformar un equipo. Para más información sobre los requerimientos para conformar un equipo puedes ingresar a nuestro términos y condiciones en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 27,
+    "question": "¿Estoy en un colegio público pero tengo más de 18 años, puedo participar?",
+    "answer": "Si, los equipos pueden estar conformados por estudiantes en un rango de edad entre los 15 y 19 años. Para más información sobre los requerimientos para conformar un equipo puedes ingresar a nuestro términos y condiciones en www.solucionesparaelfuturo.co"
+  },
+  {
+    "id": 28,
+    "question": "Soy un colegio solo femenino o solo masculino. ¿Puedo participar?",
+    "answer": "No, los equipos deben ser conformados de forma mixta. Para más información sobre los requerimientos para conformar un equipo puedes ingresar a nuestro términos y condiciones en www.solucionesparaelfuturo.co"
+  }
+]
