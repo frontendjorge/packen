@@ -13,6 +13,7 @@ import Carousel from 'react-native-snap-carousel';
 const { width, height } = Dimensions.get('window');
 
 import { LatoBold, LatoLight } from '../components/StyledText';
+import { Item } from 'react-native/Libraries/Components/Picker/Picker';
 
 const pillowsRest = 'https://inmoobi.com/MOCK_DATA.json';
  
@@ -72,7 +73,7 @@ getRecommendedFromApiAsync() {
           null
           )} 
           <Image
-            source={{uri: 'https://image.freepik.com/foto-gratis/representacion-3d-hermosa-suite-dormitorio-lujo-hotel-television-mesa-trabajo_105762-524.jpg'}} 
+            source={{uri: reco.image}} 
             style={styles.imageSlider}
           />
           <LatoBold style={styles.getTitle}>{reco.title}</LatoBold>

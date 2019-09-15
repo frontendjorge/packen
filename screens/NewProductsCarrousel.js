@@ -37,7 +37,7 @@ export default class MyCarousel extends Component {
     return (     
         <View style={styles.getSlider}>
         <Image
-          source={{uri: 'https://image.freepik.com/foto-gratis/diseno-zen-japones-habitacion-hotel-madera-luz-hiden-sobre-fondo-pared-blanca_118980-234.jpg'}} 
+          source={{uri: item.image}} 
           style={styles.imageSlider}
         />
         <View style={styles.getSliderTitle}>
