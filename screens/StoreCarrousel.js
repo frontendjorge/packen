@@ -158,7 +158,7 @@ export default class MyStoreCarousel extends Component {
        
        
         
-        <Carousel layout={'default'} layoutCardOffset={10}
+        <Carousel layout={'tinder'} layoutCardOffset={10}
               ref={(c) => { this._carousel = c; }}
               data={this.state.pillowList}
               renderItem={this._renderItem}
