@@ -16,3 +16,6 @@
 ## Preview
 -   You can find an APK app for android in this repository folder "APK ANDROID" just download it on your phone and install.
 
+![Home](https://giphy.com/gifs/XcvCUVz51m3HMehCwY)
+
+![store](https://giphy.com/gifs/SS9I1JJHJsgSl4ziOh)
